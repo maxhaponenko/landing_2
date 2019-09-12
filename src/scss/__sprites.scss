@@ -1,0 +1,59 @@
+.sprite {
+    background-image: url(/assets/img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow_black {
+    width: 34px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_button {
+    width: 75px;
+    height: 75px;
+    background-position: -49px -5px;
+}
+
+.sprite-arrow_white {
+    width: 27px;
+    height: 8px;
+    background-position: -5px -90px;
+}
+
+.sprite-facebook {
+    width: 31px;
+    height: 31px;
+    background-position: -42px -90px;
+}
+
+.sprite-instagram {
+    width: 31px;
+    height: 31px;
+    background-position: -83px -90px;
+}
+
+.sprite-linkedin {
+    width: 31px;
+    height: 31px;
+    background-position: -134px -5px;
+}
+
+.sprite-logo {
+    width: 35px;
+    height: 35px;
+    background-position: -134px -46px;
+}
+
+.sprite-skype {
+    width: 30px;
+    height: 31px;
+    background-position: -5px -46px;
+}
+
+.sprite-twitter {
+    width: 31px;
+    height: 31px;
+    background-position: -124px -91px;
+}

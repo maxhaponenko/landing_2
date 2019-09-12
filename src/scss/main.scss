@@ -1,7 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import '__reset.scss';
 @import '__sprites.scss';
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 $color-primary: #2ecc71;
@@ -11,20 +11,23 @@ $color-bg-grey: #ecf0f1;
 $color-font-grey: #bdc3c7;
 $shadow: rgba(0, 0, 0, 0.25);
 
-body {
-    background-color: #fff;
-    font-size: 14px;
+html {
+    max-width: 100vw;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li, input {
-    font-family: Roboto, sans-serif;
-    
+body {
+    background-color: #fff;
+    font-size: 18px;
+    font-family: Rubik, sans-serif;
 }
+
 
 
 .wrapper {
     margin: 0 auto;
     max-width: 1280px;
+    padding: 0 35px 0 35px;
+    height: 100%;
 }
 .pageWrapper {
     display: grid;
@@ -37,17 +40,158 @@ h1, h2, h3, h4, h5, h6, p, ul, li, input {
     "footer"
 }
 header {
+    position: relative;
     height: 127px;
-    width: 100vw;
-    background-color: grey;
+    max-width: 100vw;
+    // background-color: grey;
 }
+.row_middle {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: visible;
+}
+.logo {
+    position: relative;
+    top: 50%;
+    left: 15px;
+    transform: translate(0, -50%);
+    width: 34px;
+    height: 34px;
+}
+.menu {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+}
+.menu ul {
+    display: block;
+    width: auto;
+    // background-color: red;
+    li {
+        display: inline-block;
+        padding: 10px 22.5px 10px 22.5px;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: blue;
+            }
+        }
+    }
+}
+
+
+.sideButtonBlock {
+    position: absolute;
+    width: 380px;
+    height: 231px;
+    background-image: url(/assets/img/background_header.png);
+    top: 0;
+    right: 0;
+    display: inline-block;
+    a {
+        position: absolute;
+        top: 53px;
+        right: 50px;
+        color: white;
+        display: inline-block;
+        span {
+            display: inline-block;
+        }
+    }
+}
+
 section {
     height: auto;
-    width: 100vw;
+    // width: 100vw;
     height: 1000px;
 }
+
+section {
+    .descriptionBlock {
+        margin-top: 45px;
+        max-width: 520px;
+        h1 {
+            font-weight: bold;
+            font-size: 2.75rem;
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-weight: normal;
+            font-size: 1.95rem;
+            // line-height: 60px;
+            text-transform: uppercase;
+        }
+        p {
+            margin-top: 35px;
+            // font-style: normal;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 35px;
+            strong {
+                font-weight: 400;
+            }
+        }
+    }
+    .imageBlock {
+        margin-top: 150px;
+    }
+    .btn_main {
+        background-color: white;
+        padding: 20px 30px 20px 30px;
+        border-radius: 35px;
+        border: 1px solid #484CE6;
+        font-size: 1.38rem;
+        box-shadow: 4px 9px 0px blue;
+        span {
+            top: 3px;
+            margin-left: 10px;
+            display: inline-block;
+        }
+        &:hover {
+            color: blue;
+            box-shadow: 4px 7px 0px blue;
+        }
+    }
+    .btn_main.mainSection {
+        margin: 50px 0 70px 0;
+    }
+}
+.section_first {
+    
+    height: auto;
+    min-height: 814px;
+}
+.section_yellow {
+    position: relative;
+    height: 300px;
+    min-height: 300px;
+    background-color: #FFD255;
+    p {
+        position: absolute;
+        left: -80px;
+        // max-width: 1350px;
+        width: 100%; 
+        font-weight: bold;
+        font-size: 80px;
+        line-height: 95px;
+        text-transform: uppercase;
+        color: #3e3f42;
+       
+        span {
+            opacity: 0.3;
+        }
+    }
+}
+
 footer {
     height: 320px;
-    width: 100vw;
+    // width: 100vw;
     background-color: grey;
 }
