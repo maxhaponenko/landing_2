@@ -5,18 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+  <script src="https://kit.fontawesome.com/e1f2c77672.js"></script>
   <link rel="stylesheet" href="/assets/css/app.css">
   <title>Test task 2</title>
 </head>
 
 <body>
-  <div id="navigation"></div>
+  <!-- <div id="navigation"></div> -->
   <header>
     <div class="wrapper">
       <div class="row row_middle">
         <div class="col-1">
-          <div class="logo">
+          <div class="logoHeader">
             <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
           </div>
         </div>
@@ -30,6 +30,9 @@
               <li><a href="#">About us</a></li>
               <li><a href="#">Contacts</a></li>
             </ul>
+            <div class="navBtnBlock">
+                <button id="showHideMenu" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+            </div>
           </div>
         </div>
       </div>
@@ -75,7 +78,7 @@
     <div>
       <div class="wrapper">
         <div class="vectorBlock_right">
-          <svg width="1130" height="515" viewBox="0 0 1130 515" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="vector_grey" width="1130" height="515" viewBox="0 0 1130 515" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M-0.000366211 324.293C-0.000366211 466.698 466.499 531 848.499 510.5C1034 500.545 1129.99 407.517 1129.99 289.154C1129.99 155.996 1051.3 -4.8e-05 729.499 0C365.999 0 -0.000366211 181.888 -0.000366211 324.293Z"
               fill="url(#paint0_linear)" fill-opacity="0.1" />
@@ -96,11 +99,12 @@
         </div>
       </div>
     </div>
+
     <div>
-      <div class="wrapper" style="overflow: visible">
+      <div class="wrapperBig">
         <div class="vectorBlock_left">
-          <div class="vector">
-            <svg class="vector_small" width="192" height="266" viewBox="0 0 192 266" fill="none"
+          <div>
+            <svg class="vector_blue_small" width="192" height="266" viewBox="0 0 192 266" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M45.0089 2.85502e-05C126.055 2.50075e-05 191.896 59.4879 191.896 133.021C191.896 206.555 126.208 265.905 45.0089 265.905C29.347 265.905 14.1413 263.702 -2.76882e-07 259.571L-1.13462e-05 6.33435C14.1413 2.20325 29.347 2.92348e-05 45.0089 2.85502e-05Z"
@@ -113,7 +117,7 @@
                 </linearGradient>
               </defs>
             </svg>
-            <svg class="vector_big" width="907" height="411" viewBox="0 0 907 411" fill="none"
+            <svg class="vector_blue_big" width="907" height="411" viewBox="0 0 907 411" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M-1.00037 16.5422V376C113.5 392 385.379 431.271 608 396.5C792.589 367.668 906 276.718 906 216C917 48.4999 317 -37.1018 -1.00037 16.5422Z"
@@ -135,14 +139,78 @@
               build the basis for your future company and build plans to scale.</p>
           </div>
         </div>
+
+
       </div>
+      <div class="clearFix"></div>
+
+
     </div>
+    <div>
+      <div class="wrapper" style="overflow: unset">
+        <button class="btn_main startupSection">Work with us<span class="sprite sprite-arrow_black"></span></button>
 
-
-   
-
+      </div>
+      <div class="clearFix"></div>
+    </div>
   </section>
   <footer>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div>
+            <p class="footerHeading">Site map</p>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">What is it for?</a></li>
+                  <li><a href="">Advantages</a></li>
+                  <li><a href="">Team</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Contacts</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Career</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <p class="footerHeading">Company info</p>
+          <ul>
+            <li><a href="tel:+38-067-672-99-69">+38-067-672-99-69</a></li>
+            <li><a href="tel:+38-067-673-36-06">+38-067-673-36-06</a></li>
+            <li><a href="https://goo.gl/maps/kiNTeLbZtV7yqXxp6" target="_blank" rel="noopener noreferrer">Lviv, Knyahyni Olgy street, 5z</a></li>
+            <li><a href="mailto:e@makeit.technology">e@makeit.technology</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-1 d-none d-xl-block"></div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="logoFooter"><a href="#"><img src="./assets/img/logo.png" alt="logo"></a></div>
+          <ul class="privacyMenu">
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <ul class="socialMedia">
+            <li><a href="#"><span class="sprite sprite-skype"></span></a></li>
+            <li><a href="https://www.facebook.com/makeittech/"><span class="sprite sprite-facebook"></span></a></li>
+            <li><a href="#"><span class="sprite sprite-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/makeit_team/"><span class="sprite sprite-instagram"></span></a></li>
+            <li><a href="https://www.linkedin.com/company/makeittech/"><span class="sprite sprite-linkedin"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperBig copyrightBlock">
+      <p class="copyright">Copyright 2019 perfection. All rights reserved</p>
+    </div>
 
   </footer>
 
