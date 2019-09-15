@@ -83,6 +83,15 @@ header {
     }
 }
 
+// This query fixes layout bug on small devices (menu button vs logo link in header block)
+@media (max-width: 577px) {
+    .logoCol {
+        width: auto;
+    }
+    .menuCol {
+        width: auto;
+    }
+}
 
 .menu {
     position: relative;
@@ -112,7 +121,7 @@ header {
         display: none;
         position: relative;
         top: 3px;
-        margin-left: 30px;
+        margin-left: 10px;
         button {
             transform: scale(1.6);
             color: #484ce6;
