@@ -54,6 +54,11 @@ body {
     "content"
     "footer"
 }
+
+// -------------
+// Header styles
+// -------------
+
 header {
     position: relative;
     height: 127px;
@@ -115,34 +120,7 @@ header {
     }
 }
 
-
-
-
-@media (max-width: 1230px) {
-    .menu ul {
-        padding-right: 40px;
-    }
-}
-@media (max-width: 1010px) {
-    .menu ul {
-        padding-right: 60px;
-    }
-}
-@media (max-width: 885px) {
-    .menu ul {
-        padding-right: 90px;
-    }
-}
-@media (max-width: 795px) {
-    .menu ul {
-        display: none;
-    }
-    .menu .navBtnBlock {
-        display: block;
-    }
-}
-
-
+// Side blue button styles
 
 .sideButtonBlock {
     position: absolute;
@@ -175,35 +153,40 @@ header {
 }
 
 
-section {
-    height: auto;
-    // width: 100vw;
-    // height: 1000px;
-}
+// Header queries
 
-@media (max-width: 700px) {
-    .section_first {
-        .row {
-            flex-direction: column-reverse;
-        }
-        .imageBlock {
-            margin-top: 30px;
-            position: relative;
-            height: auto;
-            img {
-                float: none;
-                position: relative;
-                left: 50%;
-                transform: translate(-50%, 0);
-                transform: scale(0.5);
-                margin: 0 auto;
-            }   
-        }
-      
+@media (max-width: 1230px) {
+    .menu ul {
+        padding-right: 40px;
     }
-    
+}
+@media (max-width: 1010px) {
+    .menu ul {
+        padding-right: 60px;
+    }
+}
+@media (max-width: 885px) {
+    .menu ul {
+        padding-right: 90px;
+    }
+}
+@media (max-width: 795px) {
+    .menu ul {
+        display: none;
+    }
+    .menu .navBtnBlock {
+        display: block;
+    }
 }
 
+// ------------------
+// Section one styles
+// ------------------
+
+.section_one {
+    height: auto;
+    min-height: 814px;
+}
 .descriptionBlock {
     margin-top: 45px;
     max-width: 520px;
@@ -233,6 +216,43 @@ section {
 .imageBlock {
     margin-top: 150px;
 }
+
+@media (max-width: 700px) {
+    .section_one {
+        .row {
+            flex-direction: column-reverse;
+        }
+        .descrCol {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .imageCol {
+            max-height: 300px;
+        }
+        .imageBlock {
+            margin-top: 0px;
+            position: relative;
+            max-height: inherit;
+            height: auto;
+            img {
+                float: none;
+                position: relative;
+                top: -100px;
+                left: -130px;
+                // left: 50%;
+                // transform: translate(-50%, 0);
+                transform: scale(0.5);
+                margin: 0 auto;
+                z-index: -1;
+            }   
+        }
+      
+    }
+    
+}
+
+// Buttons styles
+
 .btn_main {
     background-color: white;
     padding: 20px 30px 20px 30px;
@@ -256,9 +276,11 @@ section {
     }
     
 }
+// Button for section one
 .btn_main.mainSection {
     margin: 50px 0 70px 0;
 }
+// Button for section three (startups)
 .btn_main.startupSection {
     position: relative;
     float: right;
@@ -266,11 +288,11 @@ section {
     right: 146px;
 }
 
-.section_first {
-    height: auto;
-    min-height: 814px;
-}
-.section_yellow {
+// ------------------
+// Section two styles
+// ------------------
+
+.section_two {
     position: relative;
     height: 300px;
     min-height: 300px;
@@ -292,6 +314,10 @@ section {
     }
 }
 
+// --------------------
+// Section three styles
+// --------------------
+
 .vectorBlock_right {
     position: relative;
     float: right;
@@ -304,7 +330,6 @@ section {
     float: left;
     top: -10px;
     left: 0;
-    // left: calc(((100vw - 1280px) / 2) * -1);
     width: auto;
     height: auto;
 }
@@ -373,73 +398,7 @@ section {
     z-index: -1;
 }
 
-
-footer {
-    // height: 320px;
-    // width: 100vw;
-    // background-color: grey;
-    .footerHeading {
-        margin: 82px 0 61px 0;
-        font-weight: bold;
-    }
-    ul {
-        display: block;
-        padding-bottom: 62px;
-        li {
-            padding: 10px 0 10px 0;
-            line-height: 21px;
-            font-weight: 400;
-            a {
-                text-decoration: none;
-                color: black;
-                &:hover {
-                    color: blue;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-    ul.privacyMenu {
-        padding-bottom: 40px;
-    }
-    ul.socialMedia {
-        padding-bottom: 33px;
-        cursor: default;
-        li {
-            display: inline-block;
-            margin: 0 10px 0 10px;
-            padding: 0;
-            &:first-child {
-                margin: 0 10px 0 0;
-            }
-            &:last-child {
-                margin: 0 0 0 10px;
-            }
-            a {
-               cursor: pointer;
-               &:hover .sprite {
-                   transform: scale(1.05);
-               }   
-            }
-        }
-    }
-    .logoFooter {
-        display: block;
-        margin: 82px 0px 49px 0px;
-
-    }
-    .copyrightBlock {
-        border-top: 1px solid rgba(50, 54, 87, 0.2);
-    }
-    .copyright {
-        text-align: center;
-        font-size: 0.65rem;
-        line-height: 14px;
-        text-transform: uppercase;
-        color:  #3E3F42;
-        padding: 10px 0 26px 0;
-    }
-}
+// Section three Media queries
 
 @media (max-width: 800px) {
     .vectorBlock_right {
@@ -651,5 +610,76 @@ footer {
     .textBlock_left {
         top: 100px;
         left: 35px;
+    }
+}
+
+// -------------
+// Footer styles
+// -------------
+
+footer {
+    // height: 320px;
+    // width: 100vw;
+    // background-color: grey;
+    .footerHeading {
+        margin: 82px 0 61px 0;
+        font-weight: bold;
+    }
+    ul {
+        display: block;
+        padding-bottom: 62px;
+        li {
+            padding: 10px 0 10px 0;
+            line-height: 21px;
+            font-weight: 400;
+            a {
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: blue;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    ul.privacyMenu {
+        padding-bottom: 40px;
+    }
+    ul.socialMedia {
+        padding-bottom: 33px;
+        cursor: default;
+        li {
+            display: inline-block;
+            margin: 0 10px 0 10px;
+            padding: 0;
+            &:first-child {
+                margin: 0 10px 0 0;
+            }
+            &:last-child {
+                margin: 0 0 0 10px;
+            }
+            a {
+               cursor: pointer;
+               &:hover .sprite {
+                   transform: scale(1.05);
+               }   
+            }
+        }
+    }
+    .logoFooter {
+        display: block;
+        margin: 82px 0px 49px 0px;
+
+    }
+    .copyrightBlock {
+        border-top: 1px solid rgba(50, 54, 87, 0.2);
+    }
+    .copyright {
+        text-align: center;
+        font-size: 0.65rem;
+        line-height: 14px;
+        text-transform: uppercase;
+        color:  #3E3F42;
+        padding: 10px 0 26px 0;
     }
 }
