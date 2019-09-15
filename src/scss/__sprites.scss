@@ -10,10 +10,16 @@
     background-position: -5px -5px;
 }
 
-.sprite-arrow_button {
+.sprite-arrow_button_right {
     width: 75px;
     height: 75px;
     background-position: -49px -5px;
+}
+.sprite-arrow_button_left {
+    width: 75px;
+    height: 75px;
+    background-position: -49px -5px;
+    transform: rotate(180deg);
 }
 
 .sprite-arrow_white {

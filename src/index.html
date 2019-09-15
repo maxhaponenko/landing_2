@@ -6,12 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/e1f2c77672.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/app.css">
   <title>Test task 2</title>
 </head>
 
 <body>
-  <!-- <div id="navigation"></div> -->
+  <div id="navigation-bar">
+    <button class="btn-nav-close" id="closeNavigation"><i class="material-icons">close</i></button>
+    <div class="logo-box">
+      <a href="#"><img class="img-fluid" src="assets/img/logo.png" alt="logo"></a>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="align-items-center" href="#">What is it for?</a></li>
+        <li><a class="align-items-center" href="#">Advantages</a></li>
+        <li><a class="align-items-center" href="#">Team</a></li>
+        <li><a class="align-items-center" href="#">About us</a></li>
+        <li><a class="align-items-center" href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
   <header>
     <div class="wrapper">
       <div class="row row_middle">
@@ -31,7 +48,7 @@
               <li><a href="#">Contacts</a></li>
             </ul>
             <div class="navBtnBlock">
-                <button id="showHideMenu" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+              <button id="showHideMenu" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
             </div>
           </div>
         </div>
@@ -65,16 +82,99 @@
     </div>
   </section>
   <section id="two" class="section_two">
-    <div class="wrapper">
-      <p><span>bringing your ideas to</span> life!</p>
-      <h2>Whenever you experience these issues</h2>
+    <div id="myCarousel" class="carousel fade">
+      <div class="wrapper" style="overflow: visible">
+        <div class="carousel-item active" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>bringing your ideas to</span> life!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
+
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col active" data-interval="3000">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col" data-interval="3000">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col" data-interval="3000">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>no need</span> in extra space!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
+
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col active">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>Brilliant management</span> team!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
+
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col active">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="controllers">
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="sprite sprite-arrow_button_left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="sprite sprite-arrow_button_right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
   <section id="three" class="section_three">
     <div>
       <div class="wrapper">
         <div class="vectorBlock_right">
-          <svg class="vector_grey" width="1130" height="515" viewBox="0 0 1130 515" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg class="vector_grey" width="1130" height="515" viewBox="0 0 1130 515" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M-0.000366211 324.293C-0.000366211 466.698 466.499 531 848.499 510.5C1034 500.545 1129.99 407.517 1129.99 289.154C1129.99 155.996 1051.3 -4.8e-05 729.499 0C365.999 0 -0.000366211 181.888 -0.000366211 324.293Z"
               fill="url(#paint0_linear)" fill-opacity="0.1" />
@@ -126,7 +226,6 @@
               </defs>
             </svg>
           </div>
-
           <div class="textBlock textBlock_left">
             <h2 class="leftHeading">Startup</h2>
             <p class="leftHeading">Have an idea that will change the world? Want to bring it into reality? We can help
@@ -134,17 +233,12 @@
               build the basis for your future company and build plans to scale.</p>
           </div>
         </div>
-
-
       </div>
       <div class="clearFix"></div>
-
-
     </div>
     <div>
       <div class="wrapper" style="overflow: unset">
         <button class="btn_main startupSection">Work with us<span class="sprite sprite-arrow_black"></span></button>
-
       </div>
       <div class="clearFix"></div>
     </div>
@@ -174,14 +268,14 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <p class="footerHeading">Company info</p>
           <ul>
             <li><a href="tel:+38-067-672-99-69">+38-067-672-99-69</a></li>
             <li><a href="tel:+38-067-673-36-06">+38-067-673-36-06</a></li>
-            <li><a href="https://goo.gl/maps/kiNTeLbZtV7yqXxp6" target="_blank" rel="noopener noreferrer">Lviv, Knyahyni Olgy street, 5z</a></li>
+            <li><a href="https://goo.gl/maps/kiNTeLbZtV7yqXxp6" target="_blank" rel="noopener noreferrer">Lviv, Knyahyni
+                Olgy street, 5z</a></li>
             <li><a href="mailto:e@makeit.technology">e@makeit.technology</a></li>
           </ul>
         </div>
@@ -198,7 +292,8 @@
             <li><a href="https://www.facebook.com/makeittech/"><span class="sprite sprite-facebook"></span></a></li>
             <li><a href="#"><span class="sprite sprite-twitter"></span></a></li>
             <li><a href="https://www.instagram.com/makeit_team/"><span class="sprite sprite-instagram"></span></a></li>
-            <li><a href="https://www.linkedin.com/company/makeittech/"><span class="sprite sprite-linkedin"></span></a></li>
+            <li><a href="https://www.linkedin.com/company/makeittech/"><span class="sprite sprite-linkedin"></span></a>
+            </li>
           </ul>
         </div>
       </div>
@@ -206,9 +301,6 @@
     <div class="wrapperBig copyrightBlock">
       <p class="copyright">Copyright 2019 perfection. All rights reserved</p>
     </div>
-
   </footer>
-
 </body>
-
 </html>

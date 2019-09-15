@@ -1,87 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" href="/assets/css/app.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/e1f2c77672.js"></script>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <title>Test task 2</title>
 <link href="/assets/css/app.css" rel="stylesheet"></head>
-<body>
-  <header>
-      
-      
-        <div class="head_1">
-          <div class="wrapper container">
-            <div class="row d-flex justify-content-between">
-              <div class="col-lg-3 col-md-3 col-sm-4 col-5">
-                <div class="logo_box d-flex align-items-center">
-                  <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/img/logo.png"></a>
-                </div>
-              </div>
-              
-              <div class="d-lg-block d-md-block d-sm-none d-none col-lg-4 col-md-5 col-sm-3">
-                <div class="row d-flex justify-content-center phones_block">
-                  <p class="phone" style="padding-right: 35px;"><i class="sprite sprite-phone d-inline-block mr-1" style="position: relative; top: 2px;"></i>(067) <span style="font-weight: bold">454-54-54</span></p>
-                  <p class="phone"><i class="sprite sprite-phone d-inline-block mr-1" style="position: relative; top: 2px;"></i>(067) <span style="font-weight: bold">454-54-54</span></p>
-                </div>
-                <div class="search_block">
-                  <form id="search_form">
-                    <input class="form-control" type="text" placeholder="Поиск по сайту">
-                    <button class="btn btn_search" role="button"><span class="sprite sprite-search"></span></button>
-                  </form>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-4 col-sm-5 col-6">
-                <div class="row d-flex justify-content-center mt-2">
-                  
-                    <li class="d-inline-block mr-2"><button class="btn btn_login"><span class="sprite sprite-key"></span>Вход <div class="separator"></div></button></li>
-                    
-                    <li class="d-inline-block"><button class="btn btn_reg"><span class="sprite sprite-lock"></span>Регистрация</button></li>
-                  
-                </div>
-                <div class="cart_box">
-                  <div class="row d-flex justyify-content-between h-100">
-                    <div class="col-4 d-flex align-items-center">
-                      <div class="cart ml-4"><button><span class="sprite sprite-cart"></span></button></div>
-                    </div>
-                    <div class="col-8 d-flex align-items-center">
-                      <div class="cart_description pr-1">
-                        <p class="mb-2"><span style="color: #2ecc71">Товаров:</span> 25 шт.</p>
-                        <p><span style="color: #2ecc71">На сумму:</span> 3750 грн.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>        
-        <div class="head_2">
-          <div class="nav navbar navbar-expand-lg">
-            <div class="wrapper container">
-                
 
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <i class="fas fa-bars fa-1x"></i>
-              </button>
-            </div>      
+<body>
+  <!-- <div id="navigation"></div> -->
+  <header>
+    <div class="wrapper">
+      <div class="row row_middle">
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-xs-3 logoCol">
+          <div class="logoHeader">
+            <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-8 col-xs-7 menuCol">
+          <div class="menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">What is it for?</a></li>
+              <li><a href="#">Advantages</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+            <div class="navBtnBlock">
+              <button id="showHideMenu" class="navbar-toggler" type="button"><i class="fas fa-bars"></i></button>
+            </div>
           </div>
         </div>
       </div>
-    
+    </div>
+    <div class="sideButtonBlock">
+      <a href="#">Work with us <span class="sprite sprite-arrow_white"></span></a>
+    </div>
   </header>
-  <section id="intro">
-    <div class="wrapper container">
-      <div class="row intro_container">
-        <div class="col-3 catalog"></div>
-        <div class="col-9 slider"></div>
+  <section id="one" class="section_one">
+    <div class="row wrapper">
+      <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10 col-xs-12 descrCol">
+        <div class="descriptionBlock">
+          <h1>What is it for?</h1>
+          <h3>Experience these issues</h2>
+            <p><strong>Our goal is to help your business do more and do better, by utilizing a decentralized
+                establishment of qualified personnel.</strong><br>You save on office expenses, costs of finding and
+              training new employees, taxes, and recruiting processes. At the same time you gain a competitive
+              advantage. We offer intelligent expansion of your current team or creation of a separate, exclusive team,
+              depending on your needs. <strong>Our outstaffing model helps optimize expenses and minimize risks
+                associated with recruiting, as well as allows you to focus on the main goals of your business.</strong>
+            </p>
+            <button class="btn_main mainSection">Work with us<span class="sprite sprite-arrow_black"></span></button>
+        </div>
+      </div>
+      <div class="col-xl-6 col-lg-6 col-md-4 col-sm-2 col-xs-12 imageCol">
+        <div class="imageBlock">
+          <img src="./assets/img/main.png" alt="info graphics">
+        </div>
       </div>
     </div>
   </section>
-    
+  <section id="two" class="section_two">
+    <div class="wrapper" style="overflow: visible">
+      <div class="textBlock_big">
+        <p><span>bringing your ideas to</span> life!</p>
+      </div>
+      <div class="textBlock_white">
+        <h2>Whenever you experience these issues</h2>
+      </div>
 
-    
+      <div id="myCarousel" class="sliderElements">
+        <div class="carousel-content">
+          <div class="row no-gutters">
+            <div class="col active" data-interval="3000">
+              <p>Planning to expand?</p>
+            </div>
+            <div class="col" data-interval="3000">
+              <p>Don`t have an office?</p>
+            </div>
+            <div class="col" data-interval="3000">
+              <p>Finding it difficult to manage staff?</p>
+            </div>
+          </div>
+        </div>
+        <div class="controllers">
+          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="sprite sprite-arrow_button_left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="sprite sprite-arrow_button_right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="three" class="section_three">
+    <div>
+      <div class="wrapper">
+        <div class="vectorBlock_right">
+          <svg class="vector_grey" width="1130" height="515" viewBox="0 0 1130 515" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M-0.000366211 324.293C-0.000366211 466.698 466.499 531 848.499 510.5C1034 500.545 1129.99 407.517 1129.99 289.154C1129.99 155.996 1051.3 -4.8e-05 729.499 0C365.999 0 -0.000366211 181.888 -0.000366211 324.293Z"
+              fill="url(#paint0_linear)" fill-opacity="0.1" />
+            <defs>
+              <linearGradient id="paint0_linear" x1="1044.14" y1="516.398" x2="369.139" y2="74.3983"
+                gradientUnits="userSpaceOnUse">
+                <stop offset="0.322917" stop-color="#323657" />
+                <stop offset="1" stop-color="#323657" stop-opacity="0.51" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <div class="textBlock textBlock_right">
+            <h2>We offer </br>a smart solution</h2>
+            <p>Our mission is to help small and medium-size businesses get more done with less money and with minimum
+              liability. By using a decentralized workfarce, you <span>SAVE 50% - 87%</span>on the cost office,
+              training, managing and keeping “in-house” employees. We create a competitive advantage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="wrapperBig">
+        <div class="vectorBlock_left">
+          <div>
+            <svg class="vector_blue_small" width="192" height="266" viewBox="0 0 192 266" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M45.0089 2.85502e-05C126.055 2.50075e-05 191.896 59.4879 191.896 133.021C191.896 206.555 126.208 265.905 45.0089 265.905C29.347 265.905 14.1413 263.702 -2.76882e-07 259.571L-1.13462e-05 6.33435C14.1413 2.20325 29.347 2.92348e-05 45.0089 2.85502e-05Z"
+                fill="url(#paint2_linear)" />
+              <defs>
+                <linearGradient id="paint2_linear" x1="238.041" y1="199.715" x2="19.7998" y2="107.571"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" style="stop-color:#393CC7; stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#196BFF; stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg class="vector_blue_big" width="907" height="411" viewBox="0 0 907 411" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M-1.00037 16.5422V376C113.5 392 385.379 431.271 608 396.5C792.589 367.668 906 276.718 906 216C917 48.4999 317 -37.1018 -1.00037 16.5422Z"
+                fill="url(#paint1_linear)" />
+              <defs>
+                <linearGradient id="paint1_linear" x1="834" y1="352.5" x2="24.4998" y2="48.4998"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" style="stop-color:#393CC7; stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#196BFF; stop-opacity:1" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="textBlock textBlock_left">
+            <h2 class="leftHeading">Startup</h2>
+            <p class="leftHeading">Have an idea that will change the world? Want to bring it into reality? We can help
+              you
+              build the basis for your future company and build plans to scale.</p>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="clearFix"></div>
+
+
+    </div>
+    <div>
+      <div class="wrapper" style="overflow: unset">
+        <button class="btn_main startupSection">Work with us<span class="sprite sprite-arrow_black"></span></button>
+
+      </div>
+      <div class="clearFix"></div>
+    </div>
+  </section>
+  <footer>
+    <div class="wrapper">
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div>
+            <p class="footerHeading">Site map</p>
+            <div class="row">
+              <div class="col-6">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">What is it for?</a></li>
+                  <li><a href="">Advantages</a></li>
+                  <li><a href="">Team</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Contacts</a></li>
+                  <li><a href="">About us</a></li>
+                  <li><a href="">Career</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <p class="footerHeading">Company info</p>
+          <ul>
+            <li><a href="tel:+38-067-672-99-69">+38-067-672-99-69</a></li>
+            <li><a href="tel:+38-067-673-36-06">+38-067-673-36-06</a></li>
+            <li><a href="https://goo.gl/maps/kiNTeLbZtV7yqXxp6" target="_blank" rel="noopener noreferrer">Lviv, Knyahyni
+                Olgy street, 5z</a></li>
+            <li><a href="mailto:e@makeit.technology">e@makeit.technology</a></li>
+          </ul>
+        </div>
+        <div class="col-xl-1 d-none d-xl-block"></div>
+        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+          <div class="logoFooter"><a href="#"><img src="./assets/img/logo.png" alt="logo"></a></div>
+          <ul class="privacyMenu">
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+          <ul class="socialMedia">
+            <li><a href="#"><span class="sprite sprite-skype"></span></a></li>
+            <li><a href="https://www.facebook.com/makeittech/"><span class="sprite sprite-facebook"></span></a></li>
+            <li><a href="#"><span class="sprite sprite-twitter"></span></a></li>
+            <li><a href="https://www.instagram.com/makeit_team/"><span class="sprite sprite-instagram"></span></a></li>
+            <li><a href="https://www.linkedin.com/company/makeittech/"><span class="sprite sprite-linkedin"></span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapperBig copyrightBlock">
+      <p class="copyright">Copyright 2019 perfection. All rights reserved</p>
+    </div>
+
+  </footer>
+
 <script type="text/javascript" src="/assets/js/app.js"></script></body>
+
 </html>

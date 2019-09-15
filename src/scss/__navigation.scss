@@ -1,0 +1,85 @@
+$color-primary: rgb(72,76,230);
+$color-bg-white: #ffffff;
+$color-bg-dark: #252e37;
+$shadow: rgba(0, 0, 0, 0.25);
+
+#navigation-bar {
+    position: fixed;
+    height: 100vh;
+    max-height: 100vh;
+    width: 300px;
+    z-index: 100;
+    top: 0px;
+    left: -310px;
+    background-color: $color-bg-white;
+    box-shadow: 1px 1px 7px $shadow;
+    -webkit-transition:200ms linear;
+	-moz-transition:200ms linear;
+	-o-transition:200ms linear;
+	-ms-transition:200ms linear;
+    transition:200ms linear;
+    .btn-nav-close {
+        position: absolute;
+        top: 0px;
+        right: -5px;
+        background-color: transparent;
+        border: none;
+        z-index: 3;
+        i {
+            color: $color-primary;
+        }
+    };
+    .logo-box {
+        height: 74px;
+        background-color: $color-bg-white;
+        z-index: 1;
+        a {
+            display: block;
+            position: relative;
+            width: 100px;
+            height: 100%;
+            margin: 0 auto;
+        };
+        img {
+            position: absolute;
+            // width: auto;
+            // height: auto;
+            // margin: 0 auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        };
+        
+    };
+    .nav-menu {
+        overflow-y: auto;
+        height: calc(100vh - 74px);
+        max-height: calc(100vh - 74px);
+        ul {
+            padding: 0 0 0 0;
+        };
+        ul:first-child {
+            padding: 10px 0 0 0;
+        };
+        li {
+            list-style: none;
+            line-height: 3em;
+            border-bottom: 1px solid $color-bg-white;
+        };
+        li:hover {
+            background-color: $color-bg-white;
+        };
+        a {
+            color: black;
+            font-size: 1.2rem;
+            text-decoration: none;
+            height: 100%;
+            display: block;
+            padding-left: 30px;
+        };
+        a:hover {
+            text-decoration: none;
+        };
+        
+    };  
+}
