@@ -10,18 +10,16 @@ const PATHS = {
 }
 
 module.exports = {
-	
 	externals: {
 		paths: PATHS
 	},
-	
 	entry: {
     app: PATHS.src
   },
   output: {
     filename: `${PATHS.assets}js/[name].js`,
     path: PATHS.dist,
-    publicPath: '/'
+    publicPath: './'
   },
   module: {
     rules: [

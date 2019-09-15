@@ -6,12 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://kit.fontawesome.com/e1f2c77672.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/app.css">
   <title>Test task 2</title>
-<link href="/assets/css/app.css" rel="stylesheet"></head>
+<link href="./assets/css/app.css" rel="stylesheet"></head>
 
 <body>
-  <!-- <div id="navigation"></div> -->
+  <div id="navigation-bar">
+    <button class="btn-nav-close" id="closeNavigation"><i class="material-icons">close</i></button>
+    <div class="logo-box">
+      <a href="#"><img class="img-fluid" src="assets/img/logo.png" alt="logo"></a>
+    </div>
+    <div class="nav-menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a class="align-items-center" href="#">What is it for?</a></li>
+        <li><a class="align-items-center" href="#">Advantages</a></li>
+        <li><a class="align-items-center" href="#">Team</a></li>
+        <li><a class="align-items-center" href="#">About us</a></li>
+        <li><a class="align-items-center" href="#">Contacts</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
   <header>
     <div class="wrapper">
       <div class="row row_middle">
@@ -65,25 +82,77 @@
     </div>
   </section>
   <section id="two" class="section_two">
-    <div class="wrapper" style="overflow: visible">
-      <div class="textBlock_big">
-        <p><span>bringing your ideas to</span> life!</p>
-      </div>
-      <div class="textBlock_white">
-        <h2>Whenever you experience these issues</h2>
-      </div>
+    <div id="myCarousel" class="carousel fade">
+      <div class="wrapper" style="overflow: visible">
+        <div class="carousel-item active" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>bringing your ideas to</span> life!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
 
-      <div id="myCarousel" class="sliderElements">
-        <div class="carousel-content">
-          <div class="row no-gutters">
-            <div class="col active" data-interval="3000">
-              <p>Planning to expand?</p>
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col active" data-interval="3000">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col" data-interval="3000">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col" data-interval="3000">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
             </div>
-            <div class="col" data-interval="3000">
-              <p>Don`t have an office?</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>no need</span> in extra space!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
+
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col active">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
             </div>
-            <div class="col" data-interval="3000">
-              <p>Finding it difficult to manage staff?</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-interval="3000">
+          <div class="textBlock_big">
+            <p><span>Brilliant management</span> team!</p>
+          </div>
+          <div class="textBlock_white">
+            <h2>Whenever you experience these issues</h2>
+          </div>
+
+          <div class="sliderElements">
+            <div class="carousel-content">
+              <div class="row no-gutters">
+                <div class="col">
+                  <p>Planning to expand?</p>
+                </div>
+                <div class="col">
+                  <p>Don`t have an office?</p>
+                </div>
+                <div class="col active">
+                  <p>Finding it difficult to manage staff?</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -98,7 +167,6 @@
           </a>
         </div>
       </div>
-
     </div>
   </section>
   <section id="three" class="section_three">
@@ -158,7 +226,6 @@
               </defs>
             </svg>
           </div>
-
           <div class="textBlock textBlock_left">
             <h2 class="leftHeading">Startup</h2>
             <p class="leftHeading">Have an idea that will change the world? Want to bring it into reality? We can help
@@ -166,17 +233,12 @@
               build the basis for your future company and build plans to scale.</p>
           </div>
         </div>
-
-
       </div>
       <div class="clearFix"></div>
-
-
     </div>
     <div>
       <div class="wrapper" style="overflow: unset">
         <button class="btn_main startupSection">Work with us<span class="sprite sprite-arrow_black"></span></button>
-
       </div>
       <div class="clearFix"></div>
     </div>
@@ -206,7 +268,6 @@
               </div>
             </div>
           </div>
-
         </div>
         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
           <p class="footerHeading">Company info</p>
@@ -240,9 +301,6 @@
     <div class="wrapperBig copyrightBlock">
       <p class="copyright">Copyright 2019 perfection. All rights reserved</p>
     </div>
-
   </footer>
-
-<script type="text/javascript" src="/assets/js/app.js"></script></body>
-
+<script type="text/javascript" src="./assets/js/app.js"></script></body>
 </html>
