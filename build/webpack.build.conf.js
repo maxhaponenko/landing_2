@@ -4,6 +4,8 @@ const baseWebpackConfig = require('./webpack.base.conf')
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
+baseWebpackConfig.output.publicPath = './';
+
 const buildWebpackConfig = merge(baseWebpackConfig, {
   // BUILD settings gonna be here
   mode: 'production',

@@ -9,7 +9,7 @@
 
 html {
     max-width: 100vw;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 body {
@@ -41,16 +41,6 @@ body {
     height: 0;
     clear: both;
     visibility: hidden;
-}
-.pageWrapper {
-    display: grid;
-    // grid-template-columns: 1fr 25%;
-    grid-template-rows: 127px 1fr 1fr;
-    grid-gap: 0px;
-    grid-template-areas: 
-    "header"
-    "content"
-    "footer"
 }
 
 // -------------
