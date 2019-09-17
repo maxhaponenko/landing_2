@@ -4,5 +4,5 @@ import 'jquery';
 import './js/navigation';
 import './js/carousel';
 
-import './scss/main.scss';
-import './css/main.css';
+import './assets/scss/main.scss';
+import './assets/css/main.css';

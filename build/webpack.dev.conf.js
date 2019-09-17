@@ -16,7 +16,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
-    new MiniCssExtractPlugin({filename: '[name].css'}),
+    // new MiniCssExtractPlugin({filename: '[name].css'}),
     new webpack.SourceMapDevToolPlugin({
       filename: "[file].map"
     }),

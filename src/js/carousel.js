@@ -1,4 +1,4 @@
-import 'jquery';
+var jQuery = require('jquery');
 
 var $ = jQuery.noConflict(); 
 
