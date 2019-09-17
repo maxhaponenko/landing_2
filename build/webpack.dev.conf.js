@@ -1,6 +1,6 @@
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+// const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const webpack = require('webpack');
 
 const devWebpackConfig = merge(baseWebpackConfig, {
@@ -16,7 +16,6 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
-    // new MiniCssExtractPlugin({filename: '[name].css'}),
     new webpack.SourceMapDevToolPlugin({
       filename: "[file].map"
     }),
