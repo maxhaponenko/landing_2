@@ -14,7 +14,7 @@ Download repo and launch terminal
 ```
 npm install
 ```
-2 - Run local server in development mode (default local port is 8082)
+2 - Run local server in development mode (default local port is 8081)
 ```
 npm run dev
 ```
